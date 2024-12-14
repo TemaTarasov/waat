@@ -1,0 +1,21 @@
+.w-logo {
+  font-family: 'Protest Guerrilla', sans-serif;
+  width: 2.17em;
+
+  font-size: 50px;
+  font-weight: 400;
+  line-height: .75;
+
+  overflow: hidden;
+
+  user-select: none;
+  pointer-events: none;
+
+  transition: .3s ease;
+  transition-property: letter-spacing, width, font-size;
+
+  &[data-size="small"] {
+    width: 0.85em;
+    letter-spacing: 0.05em;
+  }
+}
