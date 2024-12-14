@@ -1,4 +1,6 @@
-@import 'normalize.css/normalize.css';
+@forward 'normalize.css/normalize.css';
+
+@use './colors' as colors;
 
 h1,
 h2,
@@ -10,10 +12,8 @@ p {
   margin: 0;
 }
 
-@import './colors';
-
 :root {
-  @each $color, $hex in $colors {
+  @each $color, $hex in colors.$colors {
     --w-#{$color}: #{$hex};
   }
 }
