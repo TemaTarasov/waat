@@ -22,6 +22,9 @@ auth.json
 
 *.log
 
+*.lock
+*-lock.json
+
 .fleet
 .idea
 .vscode
